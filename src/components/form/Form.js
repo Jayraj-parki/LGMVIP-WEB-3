@@ -94,8 +94,8 @@ export default function Form() {
                             </div>
                         </div>
                         <div className={s.fieldBtn}>
-                            <button type="submit" onClick={(e) => handleForm(e)}>Enroll Student</button>
-                            <button type="button" onClick={() => clearForm()}>Clear</button>
+                            <button className={s.submit} type="submit" onClick={(e) => handleForm(e)}>Enroll Student</button>
+                            <button className={s.cancel}  type="button" onClick={() => clearForm()}>Clear</button>
                         </div>
                     </form>
                 </div>
