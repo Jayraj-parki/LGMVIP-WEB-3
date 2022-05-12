@@ -1,0 +1,115 @@
+.container {
+    // background-color: #718093;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wrapper {
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+        align-items: start;
+      
+        @media screen and (max-width:1250px) {
+            width:90%
+        }
+        @media screen and (max-width:1250px) {
+            width:80%;
+            flex-direction:column;
+            .formFilling{
+                width:100%;
+                
+            }
+            .list{
+               width: 100%;
+            }
+        }
+        @media screen and (max-width:600px) {
+            width:100%;
+            flex-direction:column;
+            .formFilling{
+                width:100%;
+               
+            }
+            .list{
+               width: 100%;
+            }
+        }
+
+        .formFilling {
+            flex: 5;
+            margin: 0 10px 0 0;
+            padding: 10px;
+            
+            .form {
+                
+                .fieldBtn {
+                    
+                    margin: 5px 0;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    button {
+                        border: none;
+                        outline: none;
+                        padding: 10px 20px;
+                        margin: 0 10px 0 0;
+                        border-radius: 5px;
+                    }
+                }
+                .field {
+                    
+                    margin: 5px 0;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    span {
+                        flex: 2;
+                        color: #f5f6fa;
+                    }
+                    input {
+                        flex: 7;
+                        padding: 10px;
+                        outline: none;
+                        border: none;
+                        border-radius: 5px;
+                    }
+                    .content {
+                        flex: 7;
+                        div {
+                            input {
+                                margin: 0 10px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .list {
+            flex: 5;
+            
+            h2{
+                text-align: center;
+                border-bottom: 2px solid #dcdde1;
+                padding: 5px ;
+                color: #dcdde1;
+            }
+            .wrapper_two {
+                // padding: 10px;
+                .listOfStudent {
+                    padding: 10px 20px;
+                    max-height: 550px;
+                    overflow-y: auto;
+                    &::-webkit-scrollbar {
+                        width: 2px;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: #888;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

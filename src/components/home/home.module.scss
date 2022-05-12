@@ -1,0 +1,22 @@
+
+.container{
+    // background-color: #40407a;
+    .grid{
+        // min-height: calc(100vh - 60px);
+        padding: 20px 10px;
+        display: grid;
+        align-items: start;
+        align-content: start;
+        justify-content: space-evenly;
+        grid-template-columns: auto auto auto;
+        @media screen and (max-width:1300px) {
+            grid-template-columns: auto  auto;
+            
+        }
+        @media screen and (max-width:920px) {
+            grid-template-columns: auto ;
+            padding: auto;
+            
+        }
+    }  
+}
